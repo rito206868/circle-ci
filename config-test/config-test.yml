@@ -1,0 +1,12 @@
+---
+# Test playbook
+- name: variable playbook test
+  hosts: localhost
+  vars:
+    var_1: ansible is
+    var_2: great
+    var_3: "{{ var_1 }} {{ var_2 }}"
+  tasks:
+    - name: print {{ var_3 }}
+      debug:
+        msg: "{{ var_3 }}"
