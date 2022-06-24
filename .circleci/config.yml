@@ -19,7 +19,7 @@ jobs:
           command: pip install --user yamllint
       - run:
           name: Lint YAMLs
-          command: /home/circleci/.local/bin/yamllint config-test/config.yml
+          command: /home/circleci/.local/bin/yamllint config-test/config-test.yml
 workflows:
   yamllint-workflow:
     jobs:
